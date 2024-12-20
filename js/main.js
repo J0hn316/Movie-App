@@ -1,3 +1,4 @@
+import { displayShows } from './DisplayShows.js';
 import { displayMovies } from './DisplayMovies.js';
 
 const global = {
@@ -22,7 +23,7 @@ function App() {
       displayMovies();
       break;
     case '/pages/shows.html':
-      console.log('Shows');
+      displayShows();
       break;
     case '/pages/movie-details.html':
       console.log('Movie Details');

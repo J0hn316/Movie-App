@@ -1,4 +1,4 @@
-import { fetchAPIData } from './api.js';
+import { fetchAPIData } from './Api.js';
 
 export const displayMovies = async () => {
   const { results } = await fetchAPIData('movie/popular');
