@@ -1,5 +1,5 @@
-import { displayShows } from './DisplayShows.js';
-import { displayMovies } from './DisplayMovies.js';
+import { getTvShows } from './TvShows.js';
+import { getMovieInfo, getMovies } from './Movies.js';
 
 const global = {
   currentPage: window.location.pathname,
@@ -20,13 +20,13 @@ function App() {
   switch (global.currentPage) {
     case '/':
     case '/index.html':
-      displayMovies();
+      getMovies();
       break;
     case '/pages/shows.html':
-      displayShows();
+      getTvShows();
       break;
     case '/pages/movie-details.html':
-      console.log('Movie Details');
+      getMovieInfo();
       break;
     case '/pages/tv-details.html':
       console.log('TV Details');

@@ -1,6 +1,6 @@
 import { fetchAPIData } from './Api.js';
 
-export const displayShows = async () => {
+export const getTvShows = async () => {
   const { results } = await fetchAPIData('tv/popular');
 
   results.forEach((show) => {
@@ -24,3 +24,5 @@ export const displayShows = async () => {
     document.querySelector('#popular-shows').appendChild(div);
   });
 };
+
+export const getTvShowsInfo = async () => {};
